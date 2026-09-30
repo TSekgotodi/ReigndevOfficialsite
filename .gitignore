@@ -1,0 +1,6 @@
+node_modules/
+dist/
+src/imports/Thabang_Sekgotodi_CV_2026.pdf
+.env
+.env.*
+!.env.example
