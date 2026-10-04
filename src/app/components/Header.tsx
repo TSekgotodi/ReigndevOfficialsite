@@ -33,6 +33,10 @@ export function Header() {
             Learning Paths
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all"></span>
           </Link>
+          <Link to="/courses" className="text-gray-300 hover:text-white transition-all hover:scale-105 relative group text-sm">
+            Courses
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all"></span>
+          </Link>
           <Link to="/about" className="text-gray-300 hover:text-white transition-all hover:scale-105 relative group text-sm">
             About Us
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all"></span>
@@ -80,6 +84,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Learning Paths
+            </Link>
+            <Link
+              to="/courses"
+              className="text-gray-300 hover:text-white transition-all py-2 px-4 rounded-lg hover:bg-white/5"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Courses
             </Link>
             <Link
               to="/about"

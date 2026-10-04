@@ -31,6 +31,7 @@ export function Terminal() {
 • about - Learn about Reign Dev
 • services - View our services
 • pricing - See our pricing
+• courses - Explore Academy programs and pricing
 • contact - Get contact information
 • learning - Information about learning paths
 • mentorship - About our mentorship program
@@ -84,8 +85,22 @@ Social Media:
 • WhatsApp: +27 68 054 0434`;
     }
 
-    // Learning
-    if (cmd === 'learning' || cmd.includes('course') || cmd.includes('training') || cmd.includes('learn')) {
+    // Courses
+    if (cmd.includes('course') || cmd.includes('academy') || cmd.includes('program') || cmd.includes('tuition') || cmd.includes('training')) {
+      return `ReignDev Academy Courses:
+• Digital Business Administration & Automation - R2,499
+• Entrepreneurship & AI - R2,999
+• Project Management & Workflow Automation - R3,499
+• Microsoft 365 Productivity & Automation - R1,999
+• AI for Business Professionals - R3,999
+• Business Automation Specialist (n8n) - R5,999
+
+The Future of Work Professional Bundle is R12,999. Business and team training starts at R15,000.
+Explore programs, details, and enrollment at /courses.`;
+    }
+
+    // Learning Paths
+    if (cmd === 'learning' || cmd.includes('learning path') || cmd.includes('learn')) {
       return `Learning Paths:
 We offer 8 comprehensive modules:
 1. Orientation & Onboarding

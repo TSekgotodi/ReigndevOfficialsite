@@ -4,6 +4,7 @@ import { HomePage } from './components/HomePage';
 import { AboutUs } from './components/AboutUs';
 import { OurServices } from './components/OurServices';
 import { LearningPaths } from './components/LearningPaths';
+import { Courses } from './components/Courses';
 import { Contact } from './components/Contact';
 import { FindMentors } from './components/FindMentors';
 import { Footer } from './components/Footer';
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<OurServices />} />
             <Route path="/learning" element={<LearningPaths />} />
+            <Route path="/courses" element={<Courses />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentors" element={<FindMentors />} />
           </Routes>
